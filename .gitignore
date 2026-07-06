@@ -7,7 +7,6 @@
 .cxx
 local.properties
 .env
-.env.example
 *.jks
 *.keystore
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "296577475443",
+    "project_id": "che-sale-fulbito",
+    "storage_bucket": "che-sale-fulbito.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296577475443:android:bccb6e5ff66de652c21b06",
+        "android_client_info": {
+          "package_name": "com.salefulbito.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk1fYKU13koDGQr4G2enD0JwJtOJOnCMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

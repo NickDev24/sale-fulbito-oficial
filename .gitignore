@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/.idea
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.env
+.env.example
+*.jks
+*.keystore
+
+# Ignore build directories entirely
+build/
+app/build/

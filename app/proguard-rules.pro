@@ -28,6 +28,30 @@
 -keep class com.example.data.CourtReview { *; }
 -keep class com.example.data.UserVideoProgress { *; }
 -keep class com.example.data.CourtVisit { *; }
+-keep class com.example.data.FreePass { *; }
+-keep class com.example.ui.AdState { *; }
+-keep class com.example.ui.FulbitoViewModel { *; }
+-keep class com.example.data.FulbitoRepository { *; }
+
+# Keep all classes in the data and ui packages from being stripped
+-keep class com.example.data.** { *; }
+-keep class com.example.ui.** { *; }
+
+# Keep Compose runtime classes
+-keep class androidx.compose.** { *; }
+-dontwarn androidx.compose.**
+
+# Keep Kotlin coroutines
+-keep class kotlinx.coroutines.** { *; }
+-dontwarn kotlinx.coroutines.**
+
+# Keep Moshi classes
+-keep class com.squareup.moshi.** { *; }
+-dontwarn com.squareup.moshi.**
+
+# Keep Retrofit classes
+-keep class retrofit2.** { *; }
+-dontwarn retrofit2.**
 
 # Keep AdMob classes
 -keep class com.google.android.gms.** { *; }

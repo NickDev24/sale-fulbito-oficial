@@ -101,11 +101,15 @@ class MainActivity : ComponentActivity() {
             Log.i("AdMob", "Initialization status: $status")
         }
 
-        FirebaseApp.initializeApp(this)
-        FirebaseAppCheck.getInstance().installAppCheckProviderFactory(
-            RecaptchaAppCheckProviderFactory.getInstance()
-        )
-        Log.i("AppCheck", "Firebase App Check initialized with reCAPTCHA Enterprise")
+        try {
+            FirebaseApp.initializeApp(this)
+            FirebaseAppCheck.getInstance().installAppCheckProviderFactory(
+                RecaptchaAppCheckProviderFactory.getInstance()
+            )
+            Log.i("AppCheck", "Firebase App Check initialized with reCAPTCHA Enterprise")
+        } catch (e: Exception) {
+            Log.e("AppCheck", "Firebase AppCheck failed: ${e.message}")
+        }
         setContent {
             MyApplicationTheme {
                 MainAppScreen(viewModel)
